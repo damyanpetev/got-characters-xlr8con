@@ -2,13 +2,15 @@ import { Component, OnInit, OnChanges, SimpleChange, Input } from '@angular/core
 
 import { Character } from "./characters.model";
 import { CharacterService } from "./characters.service";
+import { KillerDirective } from "./killer.directive";
 
 @Component({
     moduleId: module.id,
     selector: 'got-characters',
     templateUrl: 'characters.component.html',
     styleUrls: ["characters.component.css"],
-    providers: [CharacterService]
+    providers: [CharacterService],
+    directives: [KillerDirective]
 })
 export class CharactersComponent implements OnInit, OnChanges {
     characters: Character[];
