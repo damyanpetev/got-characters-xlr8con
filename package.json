@@ -1,5 +1,5 @@
 {
-  "name": "angular2-quickstart",
+  "name": "angular2-got-quickstart",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
@@ -17,8 +17,8 @@
     "webdriver:update": "webdriver-manager update"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Damyan Petev",
+  "license": "MIT",
   "dependencies": {
     "@angular/common":  "2.0.0-rc.1",
     "@angular/compiler":  "2.0.0-rc.1",
