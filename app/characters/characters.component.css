@@ -1,0 +1,22 @@
+/*
+These styles will get an auto-generated attribute in emulated encapsulation (default)
+and will not apply to elements outside the component
+*/
+
+ul {
+  list-style: none;
+  width: 20em;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 1.2em;
+    border-radius: 4px;
+}
+li.off {
+  color: red;
+}
