@@ -14,11 +14,46 @@
 
     <script src="systemjs.config.js"></script>
     <script>
+    /* Allow characters module to load from the characters/index.ts barrel: */
+    System.config({
+        packages: {
+          "app/characters": { main: 'index' }
+        }
+      });
+
       System.import('app').catch(function(err){ console.error(err); });
+      
     </script>
+    <style>
+      /* This style would apply to the component and external list items
+          Same excact CSS encapsulated in the component won't apply to the external list.
+      */
+      /*ul {
+        list-style: none;
+        width: 20em;
+      }
+
+      li {
+          cursor: pointer;
+          position: relative;
+          left: 0;
+          background-color: #EEE;
+          margin: .5em;
+          padding: .3em 1.2em;
+          border-radius: 4px;
+      }
+      li.off {
+        color: red;
+      }*/
+    </style>
   </head>
 
   <body>
     <my-app>Loading...</my-app>
+    
+    <ul>
+      <li>external test item</li>
+      <li class="off">with off class</li>
+    </ul>
   </body>
 </html>
