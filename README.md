@@ -3,11 +3,17 @@
 > Purely for educational purposes but mostly for the entertainment value. 
 
 Simple Angular 2 demo project, based on the [QuickStart](https://github.com/angular/quickstart) project and 
-used for my "Angular 102" session at [XLR8 Conference 2016](http://xlr8con.com/#tracks).
+used for my "Angular 102" session at [XLR8 Conference 2016](http://xlr8con.com/#tracks). 
+I've made the commits in steps so you can track each one and added some comments.
 
-Demo `@Component` renders a fairly short list of main characters allowing to swap to 
+
+![](got-characters-demo.png)
+
+
+Demo [`@Component`](/app/characters/characters.component.ts) renders a fairly short list of main characters allowing to swap to 
 alternative/popular names (sometimes the only ones I can remember) and of course you can
-off a character using a truly killer `@Directive` functionality :)
+off a character using a truly killer [`@Directive`](/app/characters/killer.directive.ts) functionality :)
+
 ![](http://s2.quickmeme.com/img/63/63c0b7ea44b06f594ea182c6e10aa1a3fa23a7ed5a894eeb3957b481f00cd2fb.jpg)
 
 Below is an excerpt from the original [README](https://github.com/angular/quickstart/blob/a93c713afafb8838ac5f9f87211a00effe2b2d99/README.md) for quick setup reference:
